@@ -1,0 +1,316 @@
+.search-form {
+  margin-top: 4%;
+  margin-left: 20%;
+}
+.search {
+  display: none !important;
+}
+.text-emp {
+  margin-left: 18%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.serach-btn {
+  margin-top: 73px;
+}
+.searchIcon {
+  width: 4%;
+  float: right;
+  margin-top: -7%;
+  margin-right: 3%;
+  pointer-events: none;
+  position: relative;
+  z-index: 1;
+  background: white;
+}
+
+.location {
+  width: 5%;
+  float: right;
+  margin-top: -8%;
+  margin-right: 2%;
+  pointer-events: none;
+
+  position: relative;
+  z-index: 99;
+  background: white;
+}
+.card-dots {
+  width: 3%;
+  float: right;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.card-dots:after {
+  content: "\2807";
+  font-size: 30px;
+}
+.dropdown-menu.show {
+  transform: translate(563px, 31px) !important;
+}
+.form-control {
+  border-color: #949494 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border: 0.0625rem solid #d6d6d6;
+  border-radius: 0.5rem;
+}
+
+.clearSearch {
+  width: 4%;
+  float: right;
+  margin-top: -7%;
+  margin-right: 3%;
+  position: relative;
+  background-color: #fff;
+}
+.card:hover {
+  border-radius: 5px;
+  border: 1px solid lightblue;
+}
+
+.root {
+  padding: 5px;
+  background: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  width: 400px;
+  height: 100px;
+}
+label {
+  display: inline-flex;
+  user-select: none;
+  cursor: pointer;
+}
+
+.heartCheckBox {
+  float: right;
+}
+
+.heart {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 50%;
+  transition: background-color 200ms ease;
+  margin-top: 10px;
+}
+.heart:hover {
+  background-color: rgba(220, 0, 78, 0.08);
+}
+
+.heart:active {
+  background-color: rgba(220, 0, 78, 0.3);
+}
+.heart.ripple {
+  transform: scale(0);
+  opacity: 1;
+  transition: 0s;
+}
+
+.checked {
+  fill: rgb(220, 0, 78);
+  display: none;
+}
+.unchecked {
+  fill: grey;
+}
+
+.cbx {
+  display: none;
+}
+
+.cbx:checked + label .checked {
+  display: inline;
+}
+.cbx:checked + label .unchecked {
+  display: none;
+}
+
+.ripple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(220, 0, 78, 0.8);
+  transform: scale(1.2);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  .fa-ban {
+    margin-top: 15px;
+    margin-left: 16px;
+    font-size: 22px;
+  }
+  .card {
+    text-align: initial;
+  }
+  .search {
+    margin-bottom: 2% !important;
+  }
+  .clearSearch {
+    margin-top: -13% !important;
+  }
+  .searchIcon {
+    margin-top: -13% !important;
+  }
+  .innerSearch {
+    z-index: 0 !important;
+  }
+  .searchIconInner {
+    margin-top: -10% !important;
+  }
+  .clearInnerSearch {
+    margin-top: -10% !important;
+  }
+  .location {
+    margin-top: -10% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    text-align: initial;
+  }
+  .ReactModal__Content--after-open {
+    width: 100%;
+    height: 100%;
+  }
+  .cancel-btn {
+    float: right;
+  }
+  .search {
+    display: block !important;
+  }
+  .search-form {
+    margin-top: 4%;
+    margin-left: 5%;
+  }
+  .innerSearch {
+    z-index: 0 !important;
+  }
+  .row {
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    text-align: center;
+  }
+  .container {
+    width: auto !important;
+  }
+  .search-bar {
+    margin: auto !important;
+  }
+  .searchIcon {
+    width: 6%;
+    float: left;
+    margin-top: -10%;
+    margin-left: 3%;
+    padding-right: px;
+    background: white;
+    position: relative;
+    /* z-index: 1; */
+  }
+
+  .clearSearch {
+    width: 6%;
+    float: left;
+    margin-top: -10%;
+    margin-left: 3%;
+    padding-right: px;
+    position: relative;
+    /* z-index: 99; */
+    /* background: white; */
+  }
+  .searchIconInner {
+    width: 4%;
+    float: right;
+    margin-top: -6%;
+    padding-right: px;
+    margin-right: 2%;
+    pointer-events: none;
+    /* cursor: pointer; */
+    /* background: white; */
+    position: relative;
+    z-index: 99;
+    background: white;
+  }
+  .clearInnerSearch {
+    width: 4%;
+    float: right;
+    margin-top: -6%;
+    padding-right: px;
+    margin-right: 2%;
+    pointer-events: none;
+  }
+  .location {
+    width: 5%;
+    float: right;
+    margin-top: -6%;
+  }
+
+  .text-emp {
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 6%;
+  }
+  .serach-btn {
+    margin-top: 21px;
+  }
+  .inner-Search {
+    height: 55px;
+  }
+  .form-control {
+    padding: 15px;
+    padding-left: 45px;
+  }
+  .like {
+    width: 7%;
+    float: right;
+  }
+}
